@@ -3,36 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Food Forward</title>
-  <meta name="viewport" content="width=device-width;initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
 
-  <header>
+
+  <section>
+
     <!-- BEGIN .top-header -->
-    <div class="top-header">
-      <ul class="top-nav">
-        <li>
-          <a href="#" target="_blank" id="customerLink">Customer Link</a>
-        </li>
-        <li>
-          <span>Change language</span>
-        </li>
-        <li>
-          <a href="javascript:;" id="languageDropdown">English</a>
-          <ul class="sub-nav">
-            <li><a href="javascript:;">English</a></li>
-            <li><a href="javascript:;">Espanol</a></li>
-            <li><a href="javascript:;">Francais</a></li>
-            <li><a href="javascript:;">Portugues</a></li>
-            <li><a href="javascript:;">Dansk</a></li>
-          </ul>
-        </li>
-      </ul>
+    <header class="top-header menuSigtema">
+      <div class="container">
+        <ul class="menuSigtema">
+          <li>
+            <a href="#" target="_blank" id="customerLink">Customer Link</a>
+          </li>
+          <li>
+            <span>Change language</span>
+          </li>
+          <li id="idoms">
+            <a href="javascript:;" id="languageDropdown">English</a>
+            <ul class="sub-nav" style="display: none">
+              <li><a href="javascript:;">English</a></li>
+              <li><a href="javascript:;">Espanol</a></li>
+              <li><a href="javascript:;">Francais</a></li>
+              <li><a href="javascript:;">Portugues</a></li>
+              <li><a href="javascript:;">Dansk</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- END .top-header -->
+
+    <div class="menuPrincipal">
+      <div class="container">
+        <ul class="anchoContenido topNav">
+          <li>
+            <a href="javascript:;" target="_self">
+              <span>
+              <img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward">
+              </span>About Us
+            </a>
+            <ul class="subNav" style="display: none;">
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=companyProfile" target="_self">Company profile</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=ourGoal" target="_self">Our goal</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=ourTeam" target="_self">Our team</a></li>
+              <div class="fondoTransparente" style="opacity: 0.7;">
+              </div>
+            </ul>
+          </li>
+          <li>
+          <a href="javascript:;" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Products</a>
+            <ul class="subNav" style="display: none;">
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=beef" target="_self">Beef</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=pork" target="_self">Pork</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=poultry" target="_self">Poultry</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=seafood" target="_self">Fish &amp; Seafood</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=lamb" target="_self">Lamb and Mutton</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=dairyProducts" target="_self">Dairy Products</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=fruitsVegetables" target="_self">Fruits &amp; Vegetables</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=proteinsAndFat" target="_self">Animal proteins and fat</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=grainsAndFeed" target="_self">Grains and feed ingredients</a></li>
+              <div class="fondoTransparente" style="opacity: 0.7;"></div>
+            </ul>
+          </li>
+          <li>
+          <a href="javascript:;" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Logistics</a>
+            <ul class="subNav" style="display: none;">
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=logistics" target="_self">Logistics Department</a></li>
+              <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=documentation" target="_self">Documentation</a></li>
+              <div class="fondoTransparente" style="opacity: 0.7;"></div>
+            </ul>
+          </li>
+          <li><a href="/sitio/index.php?mid=exhibitions" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Exhibitions</a></li>
+          <li><a href="/sitio/index.php?mid=jobs" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Jobs</a></li>
+          <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=offices" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Our Offices</a></li>
+          <li><a href="/sitio/index.php?mid=html&amp;func=load&amp;value=contactus" target="_self"><span><img src="/assets/images/fondoItemMenu.png" width="12" height="155" alt="Food Forward"></span>Contact us</a></li>
+        </ul>
+        <div class="fondoTransparente" style="opacity: 0.9;"></div>
+      </div>
     </div>
-  </header>
-  <!-- END .top-header -->
+
+  </section>
 
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

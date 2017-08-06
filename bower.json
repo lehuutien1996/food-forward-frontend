@@ -1,0 +1,21 @@
+{
+  "name": "tiencmu/foodforward",
+  "description": "Front for foodforward project",
+  "main": "",
+  "authors": [
+    "Tien",
+    "Le Huu <lehuutien1996@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lehuutien1996/food-forward-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

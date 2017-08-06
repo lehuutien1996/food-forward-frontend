@@ -7,44 +7,69 @@
   left: 0;
   z-index: 9999;
   background-color: rgba(104, 106, 117, 0.9);
-  box-shadow: 0px 3px 5px #222; }
+  box-shadow: 0px 3px 5px #222;
+}
 
 .menuSigtema {
   list-style: none;
   display: block;
   font-size: 12px;
-  text-align: right; }
-  .menuSigtema li {
+  text-align: right;
+
+  li {
     display: inline;
     position: relative;
     margin-left: 30px;
-    padding: 11px 0; }
-    .menuSigtema li#idoms:hover .sub-nav {
-      display: block !important; }
-    .menuSigtema li:hover a {
+    padding: 11px 0;
+
+    &#idoms:hover {
+      .sub-nav {
+        display: block !important;
+      }
+    }
+
+    &:hover a {
       background-color: #444;
       border-top: 1px solid #000;
       border-left: 1px solid #000;
       border-bottom: 1px solid #999;
-      border-right: 1px solid #999; }
-    .menuSigtema li span {
-      color: #c5cdad; }
-    .menuSigtema li a {
+      border-right: 1px solid #999;
+    }
+
+    span {
+      color: #c5cdad;
+    }
+
+    a {
       width: 100%;
       color: #fff;
       line-height: 38px;
       padding: 5px 10px;
       border: 1px solid #aaa;
-      border-radius: 20px; }
-      .menuSigtema li a#customerLink {
+      border-radius: 20px;
+
+      &#customerLink {
         padding-left: 30px;
-        background: url(/assets/images/fondoCustomerlink.png) no-repeat 10px 5px; }
-      .menuSigtema li a#languageDropdown {
+        background: url(/assets/images/fondoCustomerlink.png) no-repeat 10px 5px;
+      }
+
+      &#languageDropdown {
         padding-right: 30px;
-        background: url(/assets/images/fondoIdiomas.png) no-repeat right 8px; }
-        .menuSigtema li a#languageDropdown:focus + .sub-nav, .menuSigtema li a#languageDropdown:active + .sub-nav {
-          display: block; }
-  .menuSigtema .sub-nav {
+        background: url(/assets/images/fondoIdiomas.png) no-repeat right 8px;
+
+        &:focus, &:active {
+          & + .sub-nav {
+            display: block;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .sub-nav {
     position: absolute;
     list-style: none;
     top: 38px;
@@ -53,24 +78,32 @@
     margin: 0;
     padding: 0;
     width: 120px;
-    background: rgba(255, 255, 255, 0.7); }
-    .menuSigtema .sub-nav li {
+    background: rgba(255, 255, 255, 0.7);
+
+    li {
       width: 120px;
       margin: 0;
       padding: 0;
       display: inline-block;
       clear: both;
-      background: url(/assets/images/imgLista.gif) no-repeat 0 5px; }
-      .menuSigtema .sub-nav li:hover {
-        background-color: #fff; }
-      .menuSigtema .sub-nav li a {
+      background: url(/assets/images/imgLista.gif) no-repeat 0 5px;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      a {
         color: #444;
         background: none;
         border: none;
         font-weight: normal;
         line-height: 23px;
         padding: 0 10px;
-        float: left; }
+        float: left;
+      }
+    }
+  }
+}
 
 .menuPrincipal {
   display: block;
@@ -81,57 +114,75 @@
   z-index: 900;
   top: 38px;
   left: 0;
-  box-shadow: 0px 0px 2px #0d87d4; }
-  .menuPrincipal ul.topNav {
+  box-shadow: 0px 0px 2px #0d87d4;
+
+  ul.topNav {
     list-style: none;
     display: block;
     font-size: 12px;
-    text-align: right; }
-    .menuPrincipal ul.topNav li {
+    text-align: right;
+
+    li {
       display: inline;
       margin-left: 10px;
-      position: relative; }
-      .menuPrincipal ul.topNav li:hover > .subNav {
-        display: block !important; }
-      .menuPrincipal ul.topNav li:hover > a > span > img {
-        top: -126px; }
-      .menuPrincipal ul.topNav li a {
+      position: relative;
+
+      &:hover {
+        & > .subNav {
+          display: block !important;
+        }
+        & > a > span > img {
+          top: -126px;
+        }
+      }
+
+      a {
         color: #fff;
         line-height: 42px;
         padding: 14px 12px 16px 24px;
         font-weight: bold;
-        background: url(/assets/images/fondoItemMenu.png) no-repeat 0 30px; }
-        .menuPrincipal ul.topNav li a > span {
+        background: url(/assets/images/fondoItemMenu.png) no-repeat 0 30px;
+
+        & > span {
           position: absolute;
           display: block;
           top: -13px;
           left: 0;
           overflow: hidden;
           height: 44px;
-          width: 12px; }
-          .menuPrincipal ul.topNav li a > span > img {
+          width: 12px;
+          & > img {
             display: block;
             position: absolute;
             top: 30px;
             left: 0;
-            transition: all 0.2s; }
-      .menuPrincipal ul.topNav li ul.subNav {
+            transition: all 0.2s;
+          }
+        }
+
+      }
+
+      ul.subNav {
         position: absolute;
         top: 31px;
         left: 0;
         list-style: none;
         padding: 0;
-        background-color: rgba(255, 255, 255, 0.8); }
-        .menuPrincipal ul.topNav li ul.subNav li {
+        background-color: rgba(255, 255, 255, 0.8);
+
+        li {
           width: 210px;
           margin: 0;
           padding: 0;
           display: inline-block;
           clear: both;
-          background: url(/assets/images/imgLista.gif) no-repeat 0 5px; }
-          .menuPrincipal ul.topNav li ul.subNav li:hover {
-            background-color: #fff; }
-          .menuPrincipal ul.topNav li ul.subNav li a {
+          background: url(/assets/images/imgLista.gif) no-repeat 0 5px;
+
+          &:hover {
+            background-color: #fff;
+          }
+
+          a {
             text-align: left;
             width: 100%;
             color: #444;
@@ -141,12 +192,14 @@
             line-height: 23px;
             padding: 0 10px;
             padding-left: 16px;
-            float: left; }
+            float: left;
+          }
+        }
 
-body {
-  background: url(/assets/images/fondoBody.jpg) repeat top left; }
+      }
 
-a {
-  text-decoration: none !important; }
+    }
 
-/*# sourceMappingURL=main.css.map */
+  }
+
+}
